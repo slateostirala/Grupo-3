@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+			<meta charset="utf-8">		
+			<link href="fonts/styles.css" rel="stylesheet"> 
+			<link href="css/main.css" rel="stylesheet"> 
+			
+			<title>Proyecto Wiki 2</title>
+			
+        </head>
+        <body>
+        	<div class="principal">
+				<ul class="menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="wordpress.html">Wordpress</a></li>
+					<li><a href="prestashop.html">Prestashop</a></li>
+					<li><a href="owncloud.html">Owncloud</a></li>
+				</ul>
+
+			<img src="img/intro.jpg" class="logo">
+
+			<h1>PrestaShop</h1>
+			<p class="parranicio">Plataforma donde cualquier empresa crea y gestiona su tienda online</p>
+
+			<p class="parranicio"><br>¿Qué requisitos necesita?<br></p>
+<p>Los requisitos necesarios para poder usar sin problemas owncloud son:<br>
+<br>PHP 5.2 o superior<br>
+<br>MySQL 5.0 o superior<br>
+<br>El hosting es Unix/Linux ( Recomendado )<br>
+<br>Servidor Apache Web 1.3 o superior<br>
+<br>64 Mb de RAM dedicados a PHP. (Mínimo)<br>
+<br>Códigos de acceso (cuentas de acceso) a su servidor mediante protocolo FTP y a su base de datos MySQL<br>
+<br>Cualquier editor de textos<br>
+<br>Cualquier cliente FTP<br>
+<br>También necesita la URL gracias a la cual la tienda va a estar visibles en internet<br>
+
+</p>
+			
+			<section class="claro">
+				<div class="content">
+					
+				</div>
+				<div class="content">
+					<p><br>Instalación<br>
+<br>Instalación Servidor Web<br>
+<br>Instalamos apache2 en nuestro ubuntu:<br> 
+<p>$sudo apt install apache2</p>
+				</div>
+			</section>
+		
+						<section class="claro">
+				<div class="content">
+					
+
+					<br>
+				</div>
+				<div class=class="claro">
+					<p><br> Instalación y creación de Base de Datos<br>
+<p><br>Para guardar todos los datos de owncloud, debemos tener una base de datos</p>
+				</div>
+				
+
+		
+			<section class="claro">
+				<div class="content">
+					
+				</div>
+				<div class="content">
+					<p>Para ello nos descargamos mysql server y client.<p> Usaremos el comando: 
+<br>$ sudo apt-get install mysql-server mysql-client <br>
+</p></p>
+
+
+				</div>
+			
+
+
+				</div>
+				<section class="claro">
+			</section>
+</section class="claro">
+<section class="claro">
+				<div class=class="claro">
+					<p><br><p>Una vez instalados, entraremos dentro de mysql usando este comando:</p></br> 
+<br>$ mysql -u root -p</br> 
+
+
+
+</div>
+
+		
+
+				<div class="content">
+					<p><br>Crear Base de Datos:<br>
+<br>CREATE DATABASE prestashop;</p><br> 
+
+<br>Crear usuario:<br> 
+<br>CREATE USER ‘grupo3’ IDENTIFIED BY ‘grupo3’;</p></br>
+
+<br>Dar privilegios al usuario:<br> 
+GRANT ALL PRIVILEGES ON prestashop.* TO ‘prestashop’;
+ 
+<br></br> 
+
+
+
+
+
+		</div>
+
+<div class="class="claro">
+<br> Instalar dependencias PHP<br>
+<br> Para el funcionamiento correcto, instalamos php y dependencias<br>
+<br>$ sudo apt-get install php7 <br>
+
+<br>$ sudo apt install -y libapache2-mod-php7.1 php7.1-gd php7.1-json php7.1-mysql php7.1-curl php7.1-intl php7.1-mcrypt php-imagick php7.1-zip php7.1-xml php7.1-mbstring<br>
+
+<br>Habilitar módulos Apache<br>
+<br>sudo a2enmod rewrite <br>
+<br>sudo a2enmod headers<br>
+
+
+<section>
+				<div class="content">
+
+<br>Instalar dependencias PHP<br>
+<br> Finalmente instalaremos PrestaShop, para ello, iremos a la carpeta html
+
+<br>cd/var/www/html<br>
+
+<br>Creamos un directorio para PrestaShop<br>
+<br>mkdir prestashop<br>
+
+<br>Concedemos permisos sobre el directorio de PrestaShop
+<br>chmod -R 777 prestashop<br>
+
+<br>Entramos en el directorio<br>
+<br>cd prestashop<br>
+
+<br>Descargamos PrestaShop<br>
+<br>wget https://download.prestashop.com/download/release /prestashop_1.7.1.1.zip<br>
+
+<br>Descomprimimos<br>
+<br>unzip  prestashop_1.7.1.1.zip<br>
+
+<br></br> 
+</div>
+</section>
+
+<div class="content">
+					
+				</div>
+
+			</section>
+					
+				</section>
+				<section>
+				<div class="content">
+					<p><br>Instalar Owncloud<br>
+
+<br>Descargamos la última versión con el comando<br> 
+
+<br>$ sudo apt-get install php7<br>
+
+<br>A continuación, extraemos los archivos del zip descargado<br>
+
+<p><br>$ tar -xjf owncloud-latest.tar.bz2  <br> 
+<br> Movemos los archivos al directorio correspondiente<br>
+
+<p>$ sudo mv owncloud /var/www/html/ </p>
+
+<br>Finalmente, daremos todos los permisos a la carpeta donde se encuentra owncloud<br>
+
+<br>$ chmod -R 777 owncloud<br>
+
+</section>
+
+		<section class="claro">
+				<div class="content">
+					
+
+<br>Accediendo a nuestro servidor de PrestaShop<br> 
+
+<br>Desde nuestro navegador web<br>
+
+<br>Escribiremos nuestra dirección IP/prestashop/<br>
+
+<img src="img/prestashop/insta.png" class="logo">
+<p><br>Dentro de la dirección, completar los diferentes requisitos que nos aparezcan <br> 
+
+<br>Escoger el idioma<br>
+
+<br>Aceptar la licencia<br>
+
+<br>Comprobar la compatibilidad<br>
+
+<br>Facilitaremos los datos de la tienda<br>
+
+<br>Indicamos los datos de la Base de Datos que hemos creado antes<br>
+
+<br>PrestaShop inicia su instalación<br>
+		<img src="img/prestashop/instalacion.png" class="logo">
+
+<br>Fin de la instalación<br>
+		<img src="img/prestashop/fin.png" class="logo">
+
+		<br>Se muestra la pagina principal<br>
+				<img src="img/prestashop/index.png">
+
+				<br>Contactar con el administrador de la tienda<br>
+						<img src="img/prestashop/cuenta.png">
+
+
+
+
+
+</section>
+
+	
+
+</p></p>
+
+
+				</div>
+
+
+	</p>
+
+	</p>
+		</body>
+	</html>
