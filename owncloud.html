@@ -4,6 +4,7 @@
 			<meta charset="utf-8">		
 			<link href="fonts/styles.css" rel="stylesheet"> 
 			<link href="css/main.css" rel="stylesheet"> 
+			<link rel="shortcut icon" href="img/favicon.ico">
 			
 			<title>Proyecto Wiki 2</title>
 			
@@ -11,11 +12,12 @@
         <body>
         	<div class="principal">
 				<ul class="menu">
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="wordpress.html">Wordpress</a></li>
-					<li><a href="prestashop.html">Prestashop</a></li>
-					<li><a href="owncloud.html">Owncloud</a></li>
-				</ul>
+        		<li><a href="index.html" id="rotacion" >Inicio</a></li>
+        		<li><a href="wordpress.html" id="rotacion">Wordpress</a></li>
+        		<li><a href="prestashop.html" id="rotacion">Prestashop</a></li>
+        		<li><a href="owncloud.html" id="rotacion">Owncloud</a></li>
+        		<li><a href="lampp.html" id="rotacion">Lampp</a></li>
+        	</ul>
 
 			<img src="img/intro.jpg" class="logo">
 
@@ -24,25 +26,69 @@
 			<iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/uMVl7HxMFvc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			<section class="claro">
 				<div class="content">
-					<img src="img/wordpress1.png">
+					<img src="img/logoo.png">
 				</div>
 				<div class="content">
-					<p>fgdh sregtrdt sreygrsdtg ysergtsre gersghser ser hysre yhser hyserhyers hyers yhesr ghseht serhyre srethg</p>
+					<p>Instalación</p>
+					<p>Instalación Servidor Web Apache</p>
+					<p>Instalamos apache2 en nuestro ubuntu:</p>
+					<p>$sudo apt install apache2</p>
+
 				</div>
 			</section>
 		
-					<p class="parrafines">Lorem ipsum dolor sit amet consectetur adipiscing elit dictum class, eleifend nisl suspendisse augue laoreet netus nostra aptent, torquent mattis convallis curae litora quisque faucibus volutpat. Consequat est dictumst erat pellentesque ultricies lobortis velit eu, non urna senectus malesuada maecenas placerat massa ac fringilla, praesent pharetra volutpat accumsan sociosqu felis imperdiet.</p>	
+					<p class="parrafines">Instalación y creación de Base de Datos.</br></br>Para guardar todos los datos de owncloud, debemos tener una base de datos. </br></br>Instalación y creación de Base de Datos</br></br>Para ello nos descargamos mysql server y client. Usaremos el comando:</br></br> $ sudo apt-get install mysql-server mysql-client </p>	
 
 		
 			<section class="claro">
 				<div class="content">
-					<img src="img/intro.jpg">
+					<p>Una vez instalados, entraremos dentro de mysql usando este comando:</br></br>$ mysql -u root -p</p>
 				</div>
 				<div class="content">
-					<p>fgdh sregtrdt sreygrsdtg ysergtsre gersghser ser hysre yhser hyserhyers hyers yhesr ghseht serhyre srethg</p>
+					<img src="img/owncloud/base_privilegios.png">
 				</div>
 				
 			</section>
+
+			<p class="parrafines">Crear Base de Datos:</br></br>CREATE DATABASE owncloud;</br></br></br></br>Crear usuario:</br></br>CREATE USER ‘owncloud’ IDENTIFIED BY ‘admingrupo1’</br></br></br></br> Dar privilegios al usuario:</br></br>GRANT ALL PRIVILEGES ON owncloud.* TO ‘owncloud’;</p>	
+
+			<section class="claro">
+				<div class="content">
+					<img src="img/owncloud/modulos.png">
+				</div>
+				<div class="content">
+					<p>Instalar Owncloud</br> Descargamos la última versión con el comando</br>$ sudo apt-get install php7</br></br></br>A continuación, extraemos los archivos del zip descargado</br>$ tar -xjf owncloud-latest.tar.bz2</br></br></br>Movemos los archivos al directorio correspondiente </br>$ sudo mv owncloud /var/www/html/</br></br></br>Finalmente, daremos todos los permisos a la carpeta donde se encuentra owncloud </br>$ chmod -R 777 owncloud</p>
+					
+
+				</div>
+			</section>
+
+			<p class="parrafines">Accedemos a nuestro servidor Owncloud</br></br></br>Usaremos nuestro navegador web para entrar al servidor</br></br></br>Escribiremos nuestra dirección IP/owncloud/</p>
+
+			<section class="claro">
+				<div class="content">
+					<p>Una vez dentro nos saldrá un formulario para registrar nuestro nombre de usuario, contraseña y la base de datos</p>
+				</div>
+				<div class="content">
+					<img src="img/owncloud/creacion.png">
+				</div>
+				
+			</section>
+			<p class="parrafines">Después de haber realizado el registro, tendremos una ventana de login para iniciar en nuestro server de Owncloud</br></br></br>Al rellenar el acceso de cuenta, nos llevara a nuestra página pagina principal</p></br>
+
+			<section class="claro">
+				<div class="content">
+					<img src="img/owncloud/cuenta_acceso.png">
+				</div>
+				<div class="content">
+					<img src="img/owncloud/cuenta.png">
+				</div>
+				
+			</section>
+
+<footer>
+			<p> Grupo 3. Carlos Martínez, Julen Lodeiro y Arkaitz</p>
+		</footer>
 		</div>
 		</body>
 	</html>

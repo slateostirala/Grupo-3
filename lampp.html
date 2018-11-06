@@ -4,137 +4,70 @@
 			<meta charset="utf-8">		
 			<link href="fonts/styles.css" rel="stylesheet"> 
 			<link href="css/main.css" rel="stylesheet"> 
+			<link rel="shortcut icon" href="img/favicon.ico">
 			
 			<title>Proyecto Wiki 2</title>
 			
         </head>
         <body>
         	<div class="principal">
-					<ul class="menu">
-        		<li><a href="wordpress_texto_image.html">Wordpress</a></li>
-				<li><a href="prestashop_texto_image.html">Prestashop</a></li>
-        		<li><a href="owncloud_texto_image.html">Owncloud</a></li>
-        		<li><a href="lampp.html">Lampp</a></li>
-
-
+				<ul class="menu">
+        		<li><a href="index.html" id="rotacion" >Inicio</a></li>
+        		<li><a href="wordpress.html" id="rotacion">Wordpress</a></li>
+        		<li><a href="prestashop.html" id="rotacion">Prestashop</a></li>
+        		<li><a href="owncloud.html" id="rotacion">Owncloud</a></li>
+        		<li><a href="lampp.html" id="rotacion">Lampp</a></li>
         	</ul>
-
 
 			<img src="img/intro.jpg" class="logo">
 
 			<h1>Lampp</h1>
-			<br>Lampp, El acrónimo LAMP, de Linux, Apache, MySQL y PHP.<br>
-			<br>Conjunto de subsistemas de software para configurar sitios web o Servidores dinámicos con un esfuerzo reducido.<br>
+			<p>Lampp, El acrónimo LAMP, de Linux, Apache, MySQL y PHP.</br></br>
+			Conjunto de subsistemas de software para configurar sitios web o Servidores dinámicos con un esfuerzo reducido.</p>
 
-			<p class="parranicio"><br>¿Qué requisitos necesita?<br></p>
-<br>Instalación Apache, Servidor Web<br>
+			<iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/rjL-M9mqPKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p><br> Abrimos terminal y escribimos el siguiente comando<br></p>
-<br>sudo apt-get install apache2<br>
+			<p class="parranicio">¿Qué requisitos necesita?</br></br>Instalación Apache, Servidor Web</br></br></br></br> Abrimos terminal y escribimos el siguiente comando<br></br>sudo apt-get install apache2</br></br></br></br>Con esto, ya tendremos Apache 2 instalado.</br></br> Este servicio se inicia automáticamente, pero puede que necesites pararlo, resetearlo o volverlo a iniciar manualmente en algún momento:</p>
 
-<p><br>Con esto, ya tendremos Apache 2 instalado.<br>
-<br> Este servicio se inicia automáticamente, pero puede que necesites pararlo, resetearlo o volverlo a iniciar manualmente en algún momento:<br></p>
+<p class="parranicio"> Inicio: &nbsp;&nbsp;&nbsp; sudo service apache2 start</br></br> Reinicio:&nbsp;&nbsp;&nbsp; sudo service apache2 restart</br></br>Detenerlo: &nbsp;&nbsp;&nbsp;sudo service apache2 stop </br></br></br></br>Probaremos si todo ha funcionado correctamente abriendo</br></br>http//localhost en nuestro navegador</p>
 
-<br> Inicio <br>
-<br>sudo service apache2 start<br>
-
-<br> Reinicio <br>
-<br> sudo service apache2 restart<br>
-
-<br> Detenerlo <br>
-<br> sudo service apache2 stop<br>
-
-<br> Probaremos si todo ha funcionado correctamente abriendo<br>
-<br>http//localhost en nuestro navegador<br>
-
-
-</p>
 		
 			<section class="claro">
 				<div class="content">
-					<img src="img/wordpress1.png">
+					<img src="img/xampp.png">
 				</div>
 				<div class="content">
-					<p><br>PHP Lenguaje de programación<br>
-<br>Instalamos por terminal<br>
-<p><br>sudo apt-get install php5 libapache2-mod-php5 php5-cli php5-mysql<br></p> 
-<p>Una vez haya acabado la instalación,<br>
-<br> reiniciamos apache manualmente con el mismo comando que os he puesto un poco más arriba:<br>
+					<p>PHP Lenguaje de programación</br>
+Instalamos por terminal</br>
+sudo apt-get install php5 libapache2-mod-php5 php5-cli php5-mysql</br></br>
+ reiniciamos apache manualmente con el mismo comando que os he puesto un poco más arriba:</br>
 
-</p>
-<br>sudo service apache2 restart<br>
 
-<p><br>Vamos a crear un simple script PHP para probar su funcionamiento, el cual guardaremos en la ruta '/var/www':</p><br>
+sudo service apache2 restart</br></br>
+
+Vamos a crear un simple script PHP para probar su funcionamiento, el cual guardaremos en la ruta '/var/www':</p>
 				</div>
 			</section>
 		
-						<section class="claro">
-				<div class="content">
-					
-				</div>
-				<div class=class="claro">
-					<p><br> MySQL, gestor de bases de datos<br>
-<br>Iniciamos instalación
-<br>sudo apt-get install mysql-server mysql-client libmysqlclient-dev
-<br>
-	
-				
-				
+						
+					<p class="parranicio"> MySQL, gestor de bases de datos</br></br></br>Iniciamos instalación</br></br>sudo apt-get install mysql-server mysql-client libmysqlclient-dev</p>	
 
-		
-			
 
-				
-				<section class="claro">
-			</section>
-</section class="claro">
 <section class="claro">
-				<div class=class="claro">
-					<p><br><p>Una vez instalados, entraremos dentro de mysql usando este comando:</p></br> 
-<br>$ mysql -u root -p</br> 
-
-
-
-</div>
-
-		
-
-
-<div class="class="claro">
-					<p><br>Arranque y parada del SGBD mysql<br></p>
-<br>El servidor de datos mysql, dispone de un script de arranque y parada en la carpeta /etc/init.d.</p><br> 
-
-<br>Iniciar o reiniciar el servidor mysql<br> 
-<br>sudo /etc/init.d/mysql restart</p></br>
-
-<br>Parar el servidor mysql<br> 
-<br>sudo /etc/init.d/mysql stop<br>
- 
-<br>Administración del SGBD mysql<br>
-<br>MySQL INICIADO<br>
-<br>Cambio contraseña de root<br>
-<br>mysql -u root  Accedemos sin contraseña<br>
-<br>Welcome to the MySQL monitor. Commands end with ; or \g.<br>
-<br>Your MySQL connection id is 5 to server version: 4.0.20-log<br>
-<br>Type 'help;' or '\h' for help. Type '\c' to clear the buffer.<br>
-<br>mysql> grant all privileges on *.* to root@localhost identified by 'nuevacontraseña' with grant option;<br>
-<br>Query OK, 0 rows affected (0.00 sec)<br>
-<br>mysql> quit<br>
-<br>Bye<br>
-
-
-
-
+				<div class="content">
+					<p>Una vez instalados, entraremos dentro de mysql usando este comando:</br></br>$ mysql -u root -p</br></br></br></br>Arranque y parada del SGBD mysql</br></br>El servidor de datos mysql, dispone de un script de arranque y parada en la carpeta /etc/init.d.</br></br>Iniciar o reiniciar el servidor mysql</br></br>sudo /etc/init.d/mysql restart</br></br></br></br>Parar el servidor mysql</br></br>sudo /etc/init.d/mysql stop<br>
 
 <br></br> 
 </div>
 
-<div class="content">
-					
+				<div class="content">
+					<img src="img/wordpress1.png">
 				</div>
 
 			</section>
-					
-				
+					<p class="parranicio">Administración del SGBD mysql</br></br>MySQL INICIADO</br></br>Cambio contraseña de root</br></br>mysql -u root  Accedemos sin contraseña</br></br></br></br>Welcome to the MySQL monitor. Commands end with ; or \g.</br></br>Your MySQL connection id is 5 to server version: 4.0.20-log</br></br>Type 'help;' or '\h' for help. Type '\c' to clear the buffer.</br></br>mysql> grant all privileges on *.* to root@localhost identified by 'nuevacontraseña' with grant option;</br></br></br></br>Query OK, 0 rows affected (0.00 sec)</br></br>mysql> quit</br></br>Bye</p></br>
+				<footer>
+			<p> Grupo 3. Carlos Martínez, Julen Lodeiro y Arkaitz</p>
+		</footer>
 		</body>
 	</html>

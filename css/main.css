@@ -81,6 +81,11 @@ section p {
 	color: #000;
 }
 
+footer  {
+		text-align: right;
+		margin-right: 15px;
+	}
+
 .content {
 	 flex: 1;
 }
@@ -113,7 +118,34 @@ section p {
 	padding-bottom: 30px;
 }
 
+.titulines {
+	font-size: 60px;
+	border-bottom: 2px solid black;
+	margin-left: 4%;
+	margin-right: 4%;
+	}
 
+.logop {
+	height: 80%;
+	width: 80%;
+	display:block;
+	margin-left: 12%;
+
+	}
+
+	#rotacion{
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+#rotacion:hover{
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
+}
 
 @media (max-width: 768px) {
 	section {
@@ -143,6 +175,33 @@ section p {
 		width: 280px;
 		height: 160px;
 	}
+	.logos {
+		height: 50%;
+		width: 50%;
+		display:block;
+		margin:auto;
+	}
+	.logop {
+		height: 40%;
+		width: 40%;
+		display:block;
+		
+		margin:auto;
 
+	}
+	.logoo {
+		height: 70%;
+		width: 70%;
+		display:block;
+		margin:auto;
+	}
+	.titulines {
+		font-size: 50px;
+		border-bottom: 0px solid black;
+	}
+	footer  {
+		text-align: center;
+		margin-right: 0px;
+	}
 }
 
